@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Cloud Cafe</h1>
+
+    <div class="content">
+      <form id="add-cafe-form">
+        <input type="text" name="name" placeholder="Cafe name" />
+        <input type="text" name="city" placeholder="Cafe city" />
+        <button>Add Cafe</button>
+      </form>
+
+      <ul id="cafe-list"></ul>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyABfdmmCjHjA8x4GLQRC21SuOeA7PU-IDo",
+        authDomain: "fifa-e92ca.firebaseapp.com",
+        databaseURL: "https://fifa-e92ca.firebaseio.com",
+        projectId: "fifa-e92ca",
+        storageBucket: "fifa-e92ca.appspot.com",
+        messagingSenderId: "904773930058",
+        appId: "1:904773930058:web:82b8c1ff4234e38bec6ab3",
+        measurementId: "G-8Q1Q214GXL",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      //db.settings({ timestampsInSnapshots: true });
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
